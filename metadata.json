@@ -1,0 +1,5 @@
+{
+  "name": "Pay Now Call Now Reminders",
+  "description": "A React application to manage reminders with real-time data and trigger actionable notifications for calls, UPI payments, or task completions.",
+  "requestFramePermissions": []
+}

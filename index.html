@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Now Call Now Reminder App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      darkMode: 'class', // Enable dark mode
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#3B82F6', // Blue-500
+              dark: '#60A5FA' // Blue-400 for dark mode
+            },
+            secondary: {
+              DEFAULT: '#F59E0B', // Amber-500
+              dark: '#FBBF24' // Amber-400 for dark mode
+            },
+            danger: {
+              DEFAULT: '#EF4444', // Red-500
+              dark: '#F87171' // Red-400 for dark mode
+            },
+            background: {
+              DEFAULT: '#F9FAFB', // Gray-50
+              dark: '#111827' // Gray-900 for dark mode
+            },
+            surface: {
+              DEFAULT: '#FFFFFF', // White
+              dark: '#1F2937' // Gray-800 for dark mode
+            },
+            'on-surface': {
+              DEFAULT: '#1F2937', // Gray-800
+              dark: '#F9FAFB' // Gray-50 for dark mode
+            },
+            'on-primary': {
+              DEFAULT: '#FFFFFF', // White
+              dark: '#1F2937' // Gray-800 for dark mode
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.3s ease-in-out',
+            'scale-in': 'scaleIn 0.3s ease-in-out',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            scaleIn: {
+               '0%': { transform: 'scale(0.95)', opacity: '0' },
+               '100%': { transform: 'scale(1)', opacity: '1' },
+            }
+          }
+        }
+      }
+    }
+    </script>
+    <style>
+      /* Using a modern font for better UI */
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      /* Custom scrollbar for dark mode */
+      .dark ::-webkit-scrollbar {
+        width: 8px;
+      }
+      .dark ::-webkit-scrollbar-track {
+        background: #1F2937; /* Gray-800 */
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #4B5563; /* Gray-600 */
+        border-radius: 4px;
+      }
+      .dark ::-webkit-scrollbar-thumb:hover {
+        background: #6B7280; /* Gray-500 */
+      }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "date-fns": "https://aistudiocdn.com/date-fns@^4.1.0",
+    "react-window": "https://aistudiocdn.com/react-window@^2.2.2",
+    "react-virtualized-auto-sizer": "https://aistudiocdn.com/react-virtualized-auto-sizer@^1.0.26"
+  }
+}
+</script>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
